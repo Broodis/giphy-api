@@ -1,0 +1,46 @@
+body {
+    background-color: #6b5b95;
+}
+
+.header {
+    background-color: #ff7b25;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 72px;
+}
+
+#buttonCol {
+    padding-top: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    padding: 1%;
+    background-color: #feb236;
+    color: white;
+    margin-left: 8px;
+}
+
+#searchCol {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1%;
+}
+
+#addButton {
+    margin-left: 1%;
+}
+
+
+
+
+/* colors: 
+#6b5b95 = purple
+#feb236 = yellow
+#d64161 = pink
+#ff7b25 = orange
