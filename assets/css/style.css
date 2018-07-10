@@ -2,6 +2,11 @@ body {
     background-color: #6b5b95;
 }
 
+hr {
+    border-top: 3px solid #ff7b25;
+    width: 50%;
+}
+
 .header {
     background-color: #ff7b25;
     color: white;
@@ -16,12 +21,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 75%;
 }
 .buttons {
     padding: 1%;
-    background-color: #feb236;
+    background-color: #6b5b95;
+    text-decoration: none;
+    box-sizing: border-box;
     color: white;
     margin-left: 8px;
+    border-color: #feb236;
+    border-width: 2px;
+    font-size: 16px;
 }
 
 #searchCol {
@@ -36,8 +47,14 @@ body {
     margin-left: 1%;
 }
 
+.buttons:hover {
+    background-color: #feb236;
+    color: #6b5b95;
+}
 
-
+.button:active {
+    background-color: #999999
+}
 
 /* colors: 
 #6b5b95 = purple

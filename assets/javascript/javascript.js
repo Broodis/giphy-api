@@ -4,7 +4,8 @@ var $buttonArea = $('#buttonCol');
 
 /* Functions:
 /* Creates buttons based on items in topics array */
-var createBtn = function() {
+var createBtn = function () {
+    $buttonArea.empty();
     for (var i = 0; i < topics.length; i++) {
         var newBtn = $('<button>');
         newBtn.attr('data-name', topics[i]);
@@ -14,4 +15,26 @@ var createBtn = function() {
 
     }
 }
+/* Adds new button based on user input (click)*/
+$("#addButton").on('click', function (event) {
+    addButton();
+});
+/* Adds new button based on user input (enter)*/
+$("#userInput").keydown(function (event) {
+    if (event.keyCode == 13) {
+        addButton();
+        $("#userInput").val("");
+        return false
+    }
+});
+
+var addButton = function () {
+    event.preventDefault();
+    var input = $("#userInput").val();
+    topics.push(input);
+    createBtn();
+}
+
+/* Main calls */
 createBtn();
+$(document).on('click', '.buttons', displayGif);
