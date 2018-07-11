@@ -34,6 +34,11 @@ var addButton = function () {
     topics.push(input);
     createBtn();
 }
+var displayGif = function() {
+    var btnTpc = $(this).data("name");
+    var apiKey = "unE0UiNlYcS1P3CH0M8fUhjUQBxlkgPk";
+    var apiUrl = "https://api.giphy.com/v1/gifs/search?q=" + btnTpc + "&api_key=" + apiKey;
+}
 
 /* Main calls */
 createBtn();
