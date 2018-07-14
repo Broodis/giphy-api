@@ -65,8 +65,8 @@ var displayGif = function () {
             newImg.attr('data-type', 'still');
             newImg.addClass('gifImage');
             newP.html('Giphy Rating: ' + rating);
-            $(newP).appendTo(newDiv)
             $(newImg).appendTo(newDiv);
+            $(newP).appendTo(newDiv)
             $('.gifImageRow').append(newDiv);
         }
     });
