@@ -56,6 +56,10 @@ hr {
     background-color: #999999
 }
 
+h1 {
+    margin: auto;
+    color: #ff7b25;
+}
 /* colors: 
 #6b5b95 = purple
 #feb236 = yellow
